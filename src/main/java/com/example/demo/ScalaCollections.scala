@@ -3,7 +3,11 @@ package com.example.demo
 /**
  * Test Class for Experimenting with Collections Types in Scala
  */
-class ScalaCollections {
+class ScalaCollections(val x: Int = 0, val y: Int = 0, private val z: Int = 0) {
+
+  def getZ: Int = {
+    z
+  }
 
   // Function to test Arrays, Vectors and Ranges
   def arrayVectorRange(): String = {
@@ -39,14 +43,14 @@ class ScalaCollections {
 
   def scalaMaps(): Unit = {
     val caps = Map(
-      "India"-> "New Delhi",
+      "India" -> "New Delhi",
       "Canada" -> "Ottawa",
       "U.S.A" -> "Washington DC"
     )
 
     println("\nKey List")
     println(caps.keys)
-//    caps.values
+    //    caps.values
     println(caps get "India")
     println(caps("Canada"))
     println(caps contains "U.S.A")

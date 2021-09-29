@@ -15,7 +15,9 @@ class ScalaController {
 object Hello extends App{
   println("Hello, World!")
 
-  val obj = new ScalaCollections
+  val obj = new ScalaCollections(0, 0, 100)
   obj.arrayVectorRange()
   obj.scalaMaps()
+
+  println(obj.getZ)
 }
