@@ -20,4 +20,9 @@ object Hello extends App{
   obj.scalaMaps()
 
   println(obj.getZ)
+
+  // Parallel Processing Constructs
+  val obj2 = new ParallelCollections
+  obj2.mappingParallels()
+  obj2.filteringCollections()
 }
