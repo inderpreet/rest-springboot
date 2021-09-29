@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.{GetMapping, RestController}
 class ScalaController {
 
   @GetMapping(path=Array("/demo"))
-  def demo = {
+  def demo: String = {
     "This is SpringBoot Application from Scala."
   }
 }
@@ -14,4 +14,8 @@ class ScalaController {
 
 object Hello extends App{
   println("Hello, World!")
+
+  val obj = new ScalaCollections
+  obj.arrayVectorRange()
+  obj.scalaMaps()
 }
